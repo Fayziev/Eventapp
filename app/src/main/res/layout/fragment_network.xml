@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#070C1F">
+
+    <ImageView
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/della_respira"
+        android:text="Network announcer"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/appBar"
+        app:layout_constraintLeft_toLeftOf="@id/appBar"
+        app:layout_constraintRight_toRightOf="@id/appBar"
+        app:layout_constraintTop_toTopOf="@id/appBar" />
+
+    <ImageView
+        android:id="@+id/backBtn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:padding="4dp"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintBottom_toBottomOf="@id/appBar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/appBar" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationBluetooth"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBar"
+        app:lottie_rawRes="@raw/internet" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/della_respira"
+        android:text="Network announcer"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/animationBluetooth"
+        app:layout_constraintLeft_toRightOf="@id/animationBluetooth"
+        app:layout_constraintTop_toTopOf="@id/animationBluetooth" />
+
+    <Switch
+        android:id="@+id/switchBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/animationBluetooth"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/animationBluetooth"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+</androidx.constraintlayout.widget.ConstraintLayout>

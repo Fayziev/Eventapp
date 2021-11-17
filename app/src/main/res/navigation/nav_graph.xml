@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/introFragment1">
+
+    <fragment
+        android:id="@+id/introFragment1"
+        android:name="uz.gita.eventapp.fragment.IntroFragment"
+        android:label="IntroFragment1"
+        tools:layout="@layout/fragment_intro" >
+        <action
+            android:id="@+id/action_introFragment1_to_intro2Fragment"
+            app:destination="@id/intro2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        tools:layout="@layout/fragment_main"
+        android:name="uz.gita.eventapp.fragment.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_bluetoothFragment"
+            app:destination="@id/bluetoothFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_wifiFragment"
+            app:destination="@id/wifiFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_screenLockFragment"
+            app:destination="@id/screenLockFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_rotateFragment"
+            app:destination="@id/rotateFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_networkFragment"
+            app:destination="@id/networkFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_airplaneFragment"
+            app:destination="@id/airplaneFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_chargeFragment"
+            app:destination="@id/chargeFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_gpsFragment"
+            app:destination="@id/gpsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_hotspotFragment"
+            app:destination="@id/hotspotFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bluetoothFragment"
+        tools:layout="@layout/fragment_bluetooth"
+        android:name="uz.gita.eventapp.fragment.BluetoothFragment"
+        android:label="BluetoothFragment" />
+    <fragment
+        android:id="@+id/airplaneFragment"
+        tools:layout="@layout/fragment_airplane"
+        android:name="uz.gita.eventapp.fragment.AirplaneFragment"
+        android:label="AirplaneFragment" />
+    <fragment
+        android:id="@+id/chargeFragment"
+        tools:layout="@layout/fragment_charge"
+        android:name="uz.gita.eventapp.fragment.ChargeFragment"
+        android:label="ChargeFragment" />
+    <fragment
+        android:id="@+id/gpsFragment"
+        tools:layout="@layout/fragment_gps"
+        android:name="uz.gita.eventapp.fragment.GpsFragment"
+        android:label="GpsFragment" />
+    <fragment
+        android:id="@+id/hotspotFragment"
+        tools:layout="@layout/fragment_hotspot"
+        android:name="uz.gita.eventapp.fragment.HotspotFragment"
+        android:label="HotspotFragment" />
+    <fragment
+        android:id="@+id/networkFragment"
+        tools:layout="@layout/fragment_network"
+        android:name="uz.gita.eventapp.fragment.NetworkFragment"
+        android:label="NetworkFragment" />
+    <fragment
+        android:id="@+id/rotateFragment"
+        tools:layout="@layout/fragment_rotate"
+        android:name="uz.gita.eventapp.fragment.CallFragment"
+        android:label="RotateFragment" />
+    <fragment
+        android:id="@+id/screenLockFragment"
+        tools:layout="@layout/fragment_screen"
+        android:name="uz.gita.eventapp.fragment.ScreenLockFragment"
+        android:label="ScreenLockFragment" />
+    <fragment
+        android:id="@+id/wifiFragment"
+        tools:layout="@layout/fragment_wifi"
+        android:name="uz.gita.eventapp.fragment.WifiFragment"
+        android:label="WifiFragment" />
+    <fragment
+        android:id="@+id/intro2Fragment"
+        tools:layout="@layout/fragment_intro2"
+        android:name="uz.gita.eventapp.fragment.Intro2Fragment"
+        android:label="Intro2Fragment" >
+        <action
+            android:id="@+id/action_intro2Fragment_to_intro3Fragment"
+            app:destination="@id/intro3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/intro3Fragment"
+        tools:layout="@layout/fragment_intro3"
+        android:name="uz.gita.eventapp.fragment.Intro3Fragment"
+        android:label="Intro3Fragment" >
+        <action
+            android:id="@+id/action_intro3Fragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "983433619175",
+    "project_id": "event-app-63108",
+    "storage_bucket": "event-app-63108.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:983433619175:android:d82ec7c0a127f333be2442",
+        "android_client_info": {
+          "package_name": "uz.gita.eventapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "983433619175-1d8d9r5bp80fc3ioageennr88jq2in6j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5Uy0CwZj9in218HVhWWdoTei3hbAZujw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "983433619175-1d8d9r5bp80fc3ioageennr88jq2in6j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
