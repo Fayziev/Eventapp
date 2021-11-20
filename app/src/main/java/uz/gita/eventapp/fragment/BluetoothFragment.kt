@@ -17,22 +17,19 @@ class BluetoothFragment : Fragment(R.layout.fragment_bluetooth) {
     private val pref = MyPref.getPref()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        startService()
         binding.switchBtn.isChecked = pref.bluetooth
+
         binding.switchBtn.setOnCheckedChangeListener { buttonView, isChecked ->
-            pref.bluetooth = isChecked
+            pref.bluetooth = !pref.bluetooth
+            if (!pref.allAnnouncements && pref.bluetooth) {
+                pref.allAnnouncements = pref.bluetooth
+            }
         }
+
         val backBtn: ImageView = view.findViewById(R.id.backBtn)
         backBtn.setOnClickListener {
             findNavController().popBackStack()
         }
     }
 
-    private fun startService() {
-        val intent = Intent(requireActivity(), EventService::class.java)
-        intent.putExtra("data", "data")
-        if (Build.VERSION.SDK_INT >= 26) {
-            requireActivity().startForegroundService(intent)
-        } else requireActivity().startService(intent)
-    }
 }

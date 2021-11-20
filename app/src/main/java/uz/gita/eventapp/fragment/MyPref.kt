@@ -21,58 +21,67 @@ class MyPref private constructor(context: Context) {
         set(value) {
             pref.edit().putBoolean("screen", value).apply()
         }
-        get() = pref.getBoolean("screen", true)
+        get() = pref.getBoolean("screen", false)
+
     var airplane: Boolean
         set(value) {
             pref.edit().putBoolean("airplane", value).apply()
         }
-        get() = pref.getBoolean("airplane", true)
+        get() = pref.getBoolean("airplane", false)
+
+    var allAnnouncements: Boolean
+        set(value) {
+            pref.edit().putBoolean("allAnnouncements", value).apply()
+        }
+        get() = pref.getBoolean("allAnnouncements", false)
+
     var gps: Boolean
         set(value) {
             pref.edit().putBoolean("gps", value).apply()
         }
-        get() = pref.getBoolean("gps", true)
-    var rotate: Boolean
-        set(value) {
-            pref.edit().putBoolean("rotate", value).apply()
-        }
-        get() = pref.getBoolean("rotate", true)
+        get() = pref.getBoolean("gps", false)
+
     var network: Boolean
         set(value) {
             pref.edit().putBoolean("network", value).apply()
         }
-        get() = pref.getBoolean("network", true)
+        get() = pref.getBoolean("network", false)
+
     var hotspot: Boolean
         set(value) {
             pref.edit().putBoolean("hotspot", value).apply()
         }
-        get() = pref.getBoolean("hotspot", true)
+        get() = pref.getBoolean("hotspot", false)
+
     var charge: Boolean
         set(value) {
             pref.edit().putBoolean("charge", value).apply()
         }
-        get() = pref.getBoolean("charge", true)
- var bluetooth: Boolean
+        get() = pref.getBoolean("charge", false)
+
+    var bluetooth: Boolean
         set(value) {
             pref.edit().putBoolean("bluetooth", value).apply()
         }
-        get() = pref.getBoolean("bluetooth", true)
- var wifi: Boolean
+        get() = pref.getBoolean("bluetooth", false)
+
+    var wifi: Boolean
         set(value) {
             pref.edit().putBoolean("wifi", value).apply()
         }
-        get() = pref.getBoolean("wifi", true)
- var screen: Boolean
+        get() = pref.getBoolean("wifi", false)
+
+    var screen: Boolean
         set(value) {
             pref.edit().putBoolean("screen", value).apply()
         }
-        get() = pref.getBoolean("screen", true)
+        get() = pref.getBoolean("screen", false)
 
- var call: Boolean
+    var call: Boolean
         set(value) {
             pref.edit().putBoolean("call", value).apply()
         }
-        get() = pref.getBoolean("call", true)
+        get() = pref.getBoolean("call", false)
 
 
 }

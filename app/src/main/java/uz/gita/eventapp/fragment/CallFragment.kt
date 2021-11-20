@@ -17,10 +17,12 @@ class CallFragment : Fragment(R.layout.fragment_rotate) {
     private val pref = MyPref.getPref()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        startService()
         binding.switchBtn.isChecked = pref.call
         binding.switchBtn.setOnCheckedChangeListener { buttonView, isChecked ->
-            pref.call = isChecked
+            pref.call = !pref.call
+            if (!pref.allAnnouncements && pref.call) {
+                pref.allAnnouncements = pref.call
+            }
         }
         val backBtn: ImageView = view.findViewById(R.id.backBtn)
         backBtn.setOnClickListener {
@@ -28,11 +30,4 @@ class CallFragment : Fragment(R.layout.fragment_rotate) {
         }
     }
 
-    private fun startService() {
-        val intent = Intent(requireActivity(), EventService::class.java)
-        intent.putExtra("data", "data")
-        if (Build.VERSION.SDK_INT >= 26) {
-            requireActivity().startForegroundService(intent)
-        } else requireActivity().startService(intent)
-    }
 }

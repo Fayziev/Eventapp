@@ -17,10 +17,12 @@ class ScreenLockFragment : Fragment(R.layout.fragment_screen) {
     private val binding by viewBinding(FragmentScreenBinding::bind)
     private val pref = MyPref.getPref()
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        startService()
         binding.switchBtn.isChecked = pref.screen
         binding.switchBtn.setOnCheckedChangeListener { buttonView, isChecked ->
-            pref.screen = isChecked
+            pref.screen = !pref.screen
+            if (!pref.allAnnouncements && pref.screen) {
+                pref.allAnnouncements = pref.screen
+            }
         }
         val backBtn: ImageView = view.findViewById(R.id.backBtn)
         backBtn.setOnClickListener {
@@ -28,11 +30,4 @@ class ScreenLockFragment : Fragment(R.layout.fragment_screen) {
         }
     }
 
-    private fun startService() {
-        val intent = Intent(requireActivity(), EventService::class.java)
-        intent.putExtra("data", "data")
-        if (Build.VERSION.SDK_INT >= 26) {
-            requireActivity().startForegroundService(intent)
-        } else requireActivity().startService(intent)
-    }
 }

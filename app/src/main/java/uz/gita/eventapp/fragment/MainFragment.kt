@@ -15,9 +15,11 @@ import uz.gita.eventapp.utils.checkPermissions
 class MainFragment : Fragment(R.layout.fragment_main) {
     private val binding by viewBinding(FragmentMainBinding::bind)
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    override fun onResume() {
+        super.onResume()
         startService()
-
+    }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         requireActivity().checkPermissions(arrayOf(android.Manifest.permission.READ_PHONE_STATE)) {}
         binding.card1.setOnClickListener {
             findNavController().navigate(R.id.action_mainFragment_to_bluetoothFragment)
