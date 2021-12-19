@@ -1,4 +1,4 @@
-package uz.gita.eventapp.utils
+package uz.gita.voiceannouncer23.utils
 
 import android.app.Activity
 import android.content.Context

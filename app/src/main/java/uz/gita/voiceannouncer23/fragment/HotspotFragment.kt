@@ -1,4 +1,4 @@
-package uz.gita.eventapp.fragment
+package uz.gita.voiceannouncer23.fragment
 
 import android.os.Bundle
 import android.view.View
@@ -6,8 +6,8 @@ import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import by.kirich1409.viewbindingdelegate.viewBinding
-import uz.gita.eventapp.R
-import uz.gita.eventapp.databinding.FragmentHotspotBinding
+import uz.gita.voiceannouncer23.R
+import uz.gita.voiceannouncer23.databinding.FragmentHotspotBinding
 
 class HotspotFragment : Fragment(R.layout.fragment_hotspot) {
     private val binding by viewBinding(FragmentHotspotBinding::bind)

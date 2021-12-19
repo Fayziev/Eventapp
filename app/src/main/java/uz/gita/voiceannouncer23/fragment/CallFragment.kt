@@ -1,26 +1,24 @@
-package uz.gita.eventapp.fragment
+package uz.gita.voiceannouncer23.fragment
 
-import android.content.Intent
-import android.os.Build
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import by.kirich1409.viewbindingdelegate.viewBinding
-import uz.gita.eventapp.EventService
-import uz.gita.eventapp.R
-import uz.gita.eventapp.databinding.FragmentGpsBinding
+import uz.gita.voiceannouncer23.R
+import uz.gita.voiceannouncer23.databinding.FragmentRotateBinding
 
-class GpsFragment : Fragment(R.layout.fragment_gps) {
-    private val binding by viewBinding(FragmentGpsBinding::bind)
+class CallFragment : Fragment(R.layout.fragment_rotate) {
+    private val binding by viewBinding(FragmentRotateBinding::bind)
     private val pref = MyPref.getPref()
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        binding.switchBtn.isChecked = pref.gps
+        binding.switchBtn.isChecked = pref.call
         binding.switchBtn.setOnCheckedChangeListener { buttonView, isChecked ->
-            pref.gps = !pref.gps
-            if (!pref.allAnnouncements && pref.gps) {
-                pref.allAnnouncements = pref.gps
+            pref.call = !pref.call
+            if (!pref.allAnnouncements && pref.call) {
+                pref.allAnnouncements = pref.call
             }
         }
         val backBtn: ImageView = view.findViewById(R.id.backBtn)

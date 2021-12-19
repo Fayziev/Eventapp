@@ -1,7 +1,7 @@
-package uz.gita.eventapp
+package uz.gita.voiceannouncer23
 
 import android.app.Application
-import uz.gita.eventapp.fragment.MyPref
+import uz.gita.voiceannouncer23.fragment.MyPref
 
 class App : Application() {
 

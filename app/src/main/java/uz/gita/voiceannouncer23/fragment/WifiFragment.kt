@@ -1,26 +1,24 @@
-package uz.gita.eventapp.fragment
+package uz.gita.voiceannouncer23.fragment
 
-import android.content.Intent
-import android.os.Build
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import by.kirich1409.viewbindingdelegate.viewBinding
-import uz.gita.eventapp.EventService
-import uz.gita.eventapp.R
-import uz.gita.eventapp.databinding.FragmentChargeBinding
+import uz.gita.voiceannouncer23.R
+import uz.gita.voiceannouncer23.databinding.FragmentWifiBinding
 
-class ChargeFragment : Fragment(R.layout.fragment_charge) {
-    private val binding by viewBinding(FragmentChargeBinding::bind)
+class WifiFragment : Fragment(R.layout.fragment_wifi) {
+    private val binding by viewBinding(FragmentWifiBinding::bind)
     private val pref = MyPref.getPref()
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        binding.switchBtn.isChecked = pref.charge
+        binding.switchBtn.isChecked = pref.wifi
         binding.switchBtn.setOnCheckedChangeListener { buttonView, isChecked ->
-            pref.charge = !pref.charge
-            if (!pref.allAnnouncements && pref.charge) {
-                pref.allAnnouncements = pref.charge
+            pref.wifi = !pref.wifi
+            if (!pref.allAnnouncements && pref.wifi) {
+                pref.allAnnouncements = pref.wifi
             }
         }
         val backBtn: ImageView = view.findViewById(R.id.backBtn)

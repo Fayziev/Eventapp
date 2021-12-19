@@ -1,4 +1,4 @@
-package uz.gita.eventapp
+package uz.gita.voiceannouncer23
 
 import org.junit.Test
 

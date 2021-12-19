@@ -1,4 +1,4 @@
-package uz.gita.eventapp
+package uz.gita.voiceannouncer23
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
@@ -12,7 +12,7 @@ import android.net.wifi.WifiManager
 import android.os.Build
 import android.os.IBinder
 import androidx.core.app.NotificationCompat
-import uz.gita.eventapp.receiver.Receiver
+import uz.gita.voiceannouncer23.receiver.Receiver
 
 class EventService : Service() {
 

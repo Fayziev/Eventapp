@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="uz.gita.eventapp">
+    package="uz.gita.voiceannouncer23">
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <uses-permission
@@ -16,7 +16,7 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
-        android:name=".App"
+        android:name="uz.gita.voiceannouncer23.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -25,7 +25,7 @@
         android:theme="@style/Theme.EventApp">
 
         <activity
-            android:name=".MainActivity"
+            android:name="uz.gita.voiceannouncer23.MainActivity"
 
             android:exported="true">
             <intent-filter>
@@ -36,7 +36,7 @@
         </activity>
 
         <receiver
-            android:name=".receiver.Receiver"
+            android:name="uz.gita.voiceannouncer23.receiver.Receiver"
             android:exported="true">
 
         </receiver>
@@ -76,7 +76,7 @@
             android:resource="@array/preloaded_fonts" />
 
         <service
-            android:name=".EventService"
+            android:name="uz.gita.voiceannouncer23.EventService"
             android:enabled="true"
             android:exported="false" />
 

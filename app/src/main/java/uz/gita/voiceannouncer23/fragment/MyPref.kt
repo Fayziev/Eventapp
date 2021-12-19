@@ -1,4 +1,4 @@
-package uz.gita.eventapp.fragment
+package uz.gita.voiceannouncer23.fragment
 
 import android.content.Context
 import android.content.Context.MODE_PRIVATE

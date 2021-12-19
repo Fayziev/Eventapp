@@ -1,13 +1,12 @@
-package uz.gita.eventapp.fragment
+package uz.gita.voiceannouncer23.fragment
 
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import by.kirich1409.viewbindingdelegate.viewBinding
-import uz.gita.eventapp.R
-import uz.gita.eventapp.databinding.FragmentIntro2Binding
-import uz.gita.eventapp.databinding.FragmentIntroBinding
+import uz.gita.voiceannouncer23.R
+import uz.gita.voiceannouncer23.databinding.FragmentIntro2Binding
 
 class Intro2Fragment : Fragment(R.layout.fragment_intro2) {
     private val binding by viewBinding(FragmentIntro2Binding::bind)

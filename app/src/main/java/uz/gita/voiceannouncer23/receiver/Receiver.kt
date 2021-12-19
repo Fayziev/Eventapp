@@ -1,4 +1,4 @@
-package uz.gita.eventapp.receiver
+package uz.gita.voiceannouncer23.receiver
 
 import android.annotation.SuppressLint
 import android.annotation.TargetApi
@@ -13,8 +13,8 @@ import android.net.wifi.WifiManager
 import android.os.Build
 import android.provider.Settings
 import android.telephony.TelephonyManager
-import uz.gita.eventapp.R
-import uz.gita.eventapp.fragment.MyPref
+import uz.gita.voiceannouncer23.R
+import uz.gita.voiceannouncer23.fragment.MyPref
 
 class Receiver : BroadcastReceiver() {
     private val pref = MyPref.getPref()

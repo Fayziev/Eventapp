@@ -1,10 +1,10 @@
-package uz.gita.eventapp
+package uz.gita.voiceannouncer23
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.navigation.fragment.NavHostFragment
-import uz.gita.eventapp.fragment.MyPref
+import uz.gita.voiceannouncer23.fragment.MyPref
 
 class MainActivity : AppCompatActivity(R.layout.activity_main) {
     private val pref=MyPref.getPref()

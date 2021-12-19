@@ -1,4 +1,4 @@
-package uz.gita.eventapp.fragment
+package uz.gita.voiceannouncer23.fragment
 
 import android.content.Intent
 import android.os.Build
@@ -7,10 +7,10 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import by.kirich1409.viewbindingdelegate.viewBinding
-import uz.gita.eventapp.EventService
-import uz.gita.eventapp.R
-import uz.gita.eventapp.databinding.FragmentMainBinding
-import uz.gita.eventapp.utils.checkPermissions
+import uz.gita.voiceannouncer23.EventService
+import uz.gita.voiceannouncer23.R
+import uz.gita.voiceannouncer23.databinding.FragmentMainBinding
+import uz.gita.voiceannouncer23.utils.checkPermissions
 
 class MainFragment : Fragment(R.layout.fragment_main) {
     private val binding by viewBinding(FragmentMainBinding::bind)

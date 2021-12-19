@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/introFragment1"
-        android:name="uz.gita.eventapp.fragment.IntroFragment"
+        android:name="uz.gita.voiceannouncer23.fragment.IntroFragment"
         android:label="IntroFragment1"
         tools:layout="@layout/fragment_intro" >
         <action
@@ -17,7 +17,7 @@
     <fragment
         android:id="@+id/mainFragment"
         tools:layout="@layout/fragment_main"
-        android:name="uz.gita.eventapp.fragment.MainFragment"
+        android:name="uz.gita.voiceannouncer23.fragment.MainFragment"
         android:label="MainFragment" >
         <action
             android:id="@+id/action_mainFragment_to_bluetoothFragment"
@@ -50,52 +50,52 @@
     <fragment
         android:id="@+id/bluetoothFragment"
         tools:layout="@layout/fragment_bluetooth"
-        android:name="uz.gita.eventapp.fragment.BluetoothFragment"
+        android:name="uz.gita.voiceannouncer23.fragment.BluetoothFragment"
         android:label="BluetoothFragment" />
     <fragment
         android:id="@+id/airplaneFragment"
         tools:layout="@layout/fragment_airplane"
-        android:name="uz.gita.eventapp.fragment.AirplaneFragment"
+        android:name="uz.gita.voiceannouncer23.fragment.AirplaneFragment"
         android:label="AirplaneFragment" />
     <fragment
         android:id="@+id/chargeFragment"
         tools:layout="@layout/fragment_charge"
-        android:name="uz.gita.eventapp.fragment.ChargeFragment"
+        android:name="uz.gita.voiceannouncer23.fragment.ChargeFragment"
         android:label="ChargeFragment" />
     <fragment
         android:id="@+id/gpsFragment"
         tools:layout="@layout/fragment_gps"
-        android:name="uz.gita.eventapp.fragment.GpsFragment"
+        android:name="uz.gita.voiceannouncer23.fragment.GpsFragment"
         android:label="GpsFragment" />
     <fragment
         android:id="@+id/hotspotFragment"
         tools:layout="@layout/fragment_hotspot"
-        android:name="uz.gita.eventapp.fragment.HotspotFragment"
+        android:name="uz.gita.voiceannouncer23.fragment.HotspotFragment"
         android:label="HotspotFragment" />
     <fragment
         android:id="@+id/networkFragment"
         tools:layout="@layout/fragment_network"
-        android:name="uz.gita.eventapp.fragment.NetworkFragment"
+        android:name="uz.gita.voiceannouncer23.fragment.NetworkFragment"
         android:label="NetworkFragment" />
     <fragment
         android:id="@+id/rotateFragment"
         tools:layout="@layout/fragment_rotate"
-        android:name="uz.gita.eventapp.fragment.CallFragment"
+        android:name="uz.gita.voiceannouncer23.fragment.CallFragment"
         android:label="RotateFragment" />
     <fragment
         android:id="@+id/screenLockFragment"
         tools:layout="@layout/fragment_screen"
-        android:name="uz.gita.eventapp.fragment.ScreenLockFragment"
+        android:name="uz.gita.voiceannouncer23.fragment.ScreenLockFragment"
         android:label="ScreenLockFragment" />
     <fragment
         android:id="@+id/wifiFragment"
         tools:layout="@layout/fragment_wifi"
-        android:name="uz.gita.eventapp.fragment.WifiFragment"
+        android:name="uz.gita.voiceannouncer23.fragment.WifiFragment"
         android:label="WifiFragment" />
     <fragment
         android:id="@+id/intro2Fragment"
         tools:layout="@layout/fragment_intro2"
-        android:name="uz.gita.eventapp.fragment.Intro2Fragment"
+        android:name="uz.gita.voiceannouncer23.fragment.Intro2Fragment"
         android:label="Intro2Fragment" >
         <action
             android:id="@+id/action_intro2Fragment_to_intro3Fragment"
@@ -104,7 +104,7 @@
     <fragment
         android:id="@+id/intro3Fragment"
         tools:layout="@layout/fragment_intro3"
-        android:name="uz.gita.eventapp.fragment.Intro3Fragment"
+        android:name="uz.gita.voiceannouncer23.fragment.Intro3Fragment"
         android:label="Intro3Fragment" >
         <action
             android:id="@+id/action_intro3Fragment_to_mainFragment"
